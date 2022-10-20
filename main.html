@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Banking System</title>
+        <meta name ="viewport"content="width=device-width ,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gabriela&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section id="header">
+            <div class="container">
+                <div class="logoParent">
+                    <div><img src="./images/TSF logo.png" class="logo"></div>
+                    <div class="titlesss" >TSF Digital Banks</div>
+                </div>
+                <div class="header-text">
+                    <h1>Now transfer money to all your friends </br>at the comfort of your home </h1>
+                    <span class="square"></span>
+                    <p>Now Banking made easy with TSF Digital banks. Transfer money to your relatives with our website. No need to wait in long queues now your mobile and PC is your bank.</p>
+                    <a href="Register.php"><button class="button">Register Now</button></a>
+                    <div class="line">
+                        <span class="line1"></span><br><br>
+                        <span class="line2"></span><br><br>
+                        <span class="line3"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav id="sideNav">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="users.php">All Accounts</a></li>
+                <li><a href="history.php">Transaction history</a></li>
+                <li><a href="users.php">Transfer history</a></li>
+                <li><a href="Register.php">Register</a></li>
+            </ul>
+        </nav>
+        <img src="./images/Menu1.png" id="menuBtn">
+
+
+<!---FEATURES--->
+<section id="features">
+    <div class="feature-row">
+        <div class="feature-col">
+            <img src="./images/customer2.jpg">
+           <a href="users.php"> <button class="button" >Our Customers</button></a>
+        </div>
+        <div class="feature-col">
+            <img src="./images/transaction.jpg">
+            <a href="history.php"><button class="button" >Transaction History</button></a>
+        </div>
+        <div class="feature-col">
+            <img src="./images/money transfer.jpg">
+            <a href="users.php"><button class="button" >Transfer Money</button></a>
+        </div>
+    </div>
+    
+</section>
+<!-- FOOTER-->
+
+
+
+        <script>
+            var menuBtn=document.getElementById("menuBtn");
+            var sideNav=document.getElementById("sideNav");
+            sideNav.style.right="-250px"
+            menuBtn.onclick=function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0px";
+                }
+                else{
+                    sideNav.style.right="-250px";
+                }
+            }
+        </script>
+    </body>
+</html>
